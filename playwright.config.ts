@@ -25,7 +25,7 @@ export default defineConfig({
 
         browserName: 'chromium',
 
-        headless: false,
+        headless: !!process.env.CI,
 
         ignoreHTTPSErrors: true,
 
