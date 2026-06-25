@@ -24,9 +24,6 @@ export async function loginAsApi(
 
     });
 
-    console.log("Status:", response.status());
-    console.log("Body:", await response.text());
-
     expect(response.ok()).toBeTruthy();
 
     const body = await response.json();
