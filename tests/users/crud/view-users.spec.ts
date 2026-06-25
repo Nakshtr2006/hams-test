@@ -13,7 +13,7 @@ test('ROOT should view users', async ({ page }) => {
     await users.open();
 
     await users.verifyUserVisible(
-        'Nakshtr Gupta'
+        'Root User'
     );
 
 });
