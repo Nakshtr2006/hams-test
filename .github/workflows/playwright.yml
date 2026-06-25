@@ -61,6 +61,8 @@ jobs:
           for i in {1..24}; do
             if curl -s http://localhost:8080/login.html > /dev/null; then
               echo "Backend started!"
+              sleep 5
+              cat backend.log
               exit 0
             fi
 
